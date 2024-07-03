@@ -43,6 +43,10 @@ labels:
     include:
       - '\b박응수\b'
     exclude: []
+  '박응수':
+    include:
+      - '\b박응수'
+    exclude: []
   '11조':
     include:
       - '\b11조\b'
