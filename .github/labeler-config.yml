@@ -1,0 +1,25 @@
+# example
+filters:
+  - label: feat
+    regexs:
+      - /\bfeat\b/
+      - /feature/i
+    events: [issues, pull_request]
+    targets: [title, comment]
+  - label: bug
+    regexs:
+      - /fix|bug/
+    targets: [title]
+  - label: documentation
+    regexs:
+      - /docs/
+    events: [pull_request]
+  - label: chore
+    regexs:
+      - /\bchore(\(.*\))?:/i
+  - label: 1조
+    regexs:
+      - /박응수/
+  - label: 박응수
+    regexs:
+      - /\b박응수(\(.*\))?:/i
