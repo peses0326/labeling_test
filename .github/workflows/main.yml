@@ -3,10 +3,9 @@ on:
   issues:
     types: [opened, edited, milestoned]
   pull_request_target:
-    types: [opened]
+    types: [opened, ublabeled, reopened,converted_to_draft,ready_for_review]
 
 jobs:
-
   labeler:
     runs-on: ubuntu-latest
     permissions:
@@ -15,6 +14,6 @@ jobs:
     steps:
     - name: Check Labels
       id: labeler
-      uses: jimschubert/labeler-action@v2
+      uses: jimschubert/labeler-action@v1
       with:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
