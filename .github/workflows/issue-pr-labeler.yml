@@ -5,7 +5,7 @@ on:
     types:
       - opened
       - edited
-  pull_request: # or pull_request_target
+  pull_request_target: # or pull_request_target
     types:
       - opened
       - reopened
